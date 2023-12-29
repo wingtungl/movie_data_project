@@ -34,4 +34,7 @@ SELECT SUM(viewcount) FROM trailer WHERE videoName LIKE 'CREED%'
 --The Flash
 SELECT SUM(viewcount) FROM trailer WHERE videoName LIKE 'The Flash%';
 
+--Wonka
+SELECT SUM(viewcount) FROM trailer WHERE videoName LIKE 'Wonka%';
+
 Select * from trailer
