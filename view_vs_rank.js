@@ -22,7 +22,7 @@ fetch('movie_trailer_data.csv')
                 textfont: {
                   family:  'Raleway, sans-serif'
                 },
-                marker: { size: 12, color: '#17becf'},
+                marker: { size: 12, color: 'rgb(255 135 170)'},
               };
             var data = [ trace1 ];
 
@@ -35,15 +35,15 @@ fetch('movie_trailer_data.csv')
                     title: 'Views',
                     range: [0, 150000000]
                 },
-                legend:{
-                    y: 0.5,
-                    yref: movie_trailer_data.map(entry => entry.Video_Name),
-                    font: {
-                      family: 'Arial, sans-serif',
-                      size: 20,
-                      color: 'grey',
-                    }
-                },
+                // legend:{
+                //     x: 1,
+                //     xref: movie_trailer_data.map(entry => entry.Video_Name),
+                //     font: {
+                //       family: 'Arial, sans-serif',
+                //       size: 20,
+                //       color: 'grey',
+                //     }
+                // },
                 title: "Worldwide Top 20 Movies' Trailer Views on Youtube (as of 12/27/23)"
             };
 
