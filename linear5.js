@@ -27,15 +27,17 @@ fetch('movie_trailer_data_reduced.csv')
                                         data: movie_trailer_data_reduced.slice(0, 20).map(entry => ({
                                             x: entry.we8,
                                             y: entry.ve8})), 
-                                        borderColor: 'black',
-                                        backgroundColor: 'black'
+                                        borderColor: 'rgba(54, 162, 235, 0.7)',
+                                        backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                                        pointRadius: 4
                                     }, 
                                     {
                                         label: 'Linear Fit',
                                         data: regression,
-                                        borderColor: 'green',
+                                        borderColor: 'rgb(255 122 127 / 80%)',
                                         backgroundColor: 'transparent',
-                                        type: 'line'
+                                        type: 'line',
+                                        pointRadius: 0.5
                                     }
                                 ]
                             },
@@ -53,7 +55,8 @@ fetch('movie_trailer_data_reduced.csv')
                                             position: 'bottom',
                                             scaleLabel: {
                                                 display: true,
-                                                labelString: 'Box Office Sales (1e8)'
+                                                labelString: 'Box Office Sales (1e8)',
+                                                fontSize: 14
                                             },
                                             ticks: {
                                                 min: 0,
@@ -66,7 +69,8 @@ fetch('movie_trailer_data_reduced.csv')
                                             type: 'linear', 
                                             scaleLabel: {
                                                 display: true,
-                                                labelString: 'Views (1e8)'
+                                                labelString: 'Views (1e8)',
+                                                fontSize: 14
                                             },
                                             ticks: {
                                                 min: 0, 

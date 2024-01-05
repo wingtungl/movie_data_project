@@ -20,7 +20,11 @@ fetch('movie_trailer_data.csv')
                     shape: 'spline',
                     dash: 'solid',
                     width: 2
-                }
+                },
+                marker: {
+                    color: 'rgb(100 180 200)',
+                    size: 8
+                  },
             };
             
             var trace2 = {
@@ -34,8 +38,8 @@ fetch('movie_trailer_data.csv')
                     width: 2
                 },
                 marker: {
-                  color: 'rgb(128, 0, 128)',
-                  size: 6
+                  color: 'rgb(175 120 225)',
+                  size: 8
                 },
             };
             
@@ -63,20 +67,6 @@ fetch('movie_trailer_data.csv')
             
             Plotly.newPlot('graph2', data, layout);
 
-            // Plotly.plot('graph2', [{
-            //     y: new Array(100).fill(0).map((d, i) => 
-            //       Math.pow(i / 50, 2) + Math.sin(i * 4)
-            //     ),
-            //     line: {dash: '0px 5200px'}
-            //   }]).then(function () {
-            //     return Plotly.animate('graph2',
-            //       [{data: [{'line.dash': '5200px 0px'}]}],
-            //       {
-            //         frame: {duration: 5000, redraw: false},
-            //         transition: {duration: 5000}
-            //       }
-            //     );
-            //   });
             }
           });
         })

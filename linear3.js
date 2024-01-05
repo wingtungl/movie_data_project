@@ -27,15 +27,17 @@ fetch('movie_trailer_data.csv')
                                         data: movie_trailer_data.slice(0, 20).map(entry => ({
                                             x: entry.Rank,
                                             y: entry.viewcount})), 
-                                        borderColor: 'black',
-                                        backgroundColor: 'black'
+                                        borderColor: 'rgb(225 150 200)',
+                                        backgroundColor: 'rgb(225 150 200)',
+                                        pointRadius: 4
                                     }, 
                                     {
                                         label: 'Linear Fit',
                                         data: regression,
-                                        borderColor: 'green',
+                                        borderColor: 'rgb(119 221 119)',
                                         backgroundColor: 'transparent',
-                                        type: 'line'
+                                        type: 'line',
+                                        pointRadius: 0.5
                                     }
                                 ]
                             },
@@ -53,7 +55,8 @@ fetch('movie_trailer_data.csv')
                                             position: 'bottom',
                                             scaleLabel: {
                                                 display: true,
-                                                labelString: 'Rank'
+                                                labelString: 'Rank',
+                                                fontSize: 14
                                             },
                                             ticks: {
                                                 min: 0,
@@ -66,7 +69,8 @@ fetch('movie_trailer_data.csv')
                                             type: 'linear', 
                                             scaleLabel: {
                                                 display: true,
-                                                labelString: 'viewcount'
+                                                labelString: 'viewcount',
+                                                fontSize: 14
                                             },
                                             ticks: {
                                                 min: 1000000, 
