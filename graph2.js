@@ -1,5 +1,5 @@
 // Fetch the CSV file
-fetch('/Resources/movie_trailer_data.csv')
+fetch('movie_trailer_data.csv')
   .then(response => response.text())
       .then(csvData => {
         // Parse the CSV data using PapaParse
