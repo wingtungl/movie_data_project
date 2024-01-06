@@ -74,7 +74,7 @@ fetch('movie_trailer_data_reduced.csv')
                                             },
                                             ticks: {
                                                 min: 0, 
-                                                max: 1.5,
+                                                max: 1.3,
                                             }
                                         }]
                                 }

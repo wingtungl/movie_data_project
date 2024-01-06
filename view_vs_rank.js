@@ -16,7 +16,7 @@ fetch('movie_trailer_data.csv')
                 y: movie_trailer_data.slice(0, 20).map(entry => entry.viewcount),
                 mode: 'markers+text',
                 type: 'scatter',
-                // name: 'Team A',
+                name: movie_trailer_data.slice(0, 20).map(entry =>entry.Video_Name),
                 text: ['1st', '2nd', '3rd', '4th', '5th','6th','7th','8th','9th','10th','11th','12th','13th','14th','15th','16th','17th','18th','19th','20th'],
                 textposition: 'top center',
                 textfont: {
@@ -35,15 +35,6 @@ fetch('movie_trailer_data.csv')
                     title: 'Views',
                     range: [0, 150000000]
                 },
-                // legend:{
-                //     x: 1,
-                //     xref: movie_trailer_data.map(entry => entry.Video_Name),
-                //     font: {
-                //       family: 'Arial, sans-serif',
-                //       size: 20,
-                //       color: 'grey',
-                //     }
-                // },
                 title: "Worldwide Top 20 Movies' Trailer Views on Youtube (as of 12/27/23)"
             };
 

@@ -74,7 +74,7 @@ fetch('movie_trailer_data.csv')
                                             },
                                             ticks: {
                                                 min: 1000000, 
-                                                max: 140000000,
+                                                max: 130000000,
                                             }
                                         }]
                                 }
